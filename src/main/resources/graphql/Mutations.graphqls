@@ -1,0 +1,9 @@
+type Mutation {
+    saveStudent(student: StudentDtoInput!): StudentDTO
+}
+
+input StudentDtoInput {
+    name: String!
+    email: String!
+    dateNaissance: String!
+}

@@ -1,0 +1,10 @@
+type Query {
+    getStudentByDateNaissance(date: String!): [StudentDTO]
+}
+
+type StudentDTO {
+    idStudent: ID!
+    name: String!
+    email: String!
+    dateNaissance: String!
+}
